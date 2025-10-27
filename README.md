@@ -58,7 +58,7 @@ Building the package for the first time should include the `-PcollectDependencie
 - `Ignore SSL`
     - Sets `verify` Python `requests` parameter
     - Disables the `urllib3.exceptions.InsecureRequestWarning`
-        - (but seriously, it's 2024, get a cert)
+
 
 ## NetBox Notes
 - For cloud assembly builds to work, vRA requires that you have a lookup domain condfigured in the IP Range.

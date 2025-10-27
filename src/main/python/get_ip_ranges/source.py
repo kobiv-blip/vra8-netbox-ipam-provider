@@ -118,7 +118,7 @@ def do_get_ip_ranges(self, auth_credentials, cert):
             except Exception as e:
                 logging.warning("Failed to process prefix %s: %s" % (prefix.get("prefix", "unknown"), str(e)))
                 continue
- 
+  
     else:
         for ip_range in all_results:
             try:

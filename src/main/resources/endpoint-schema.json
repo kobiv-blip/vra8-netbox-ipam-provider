@@ -1,0 +1,109 @@
+{
+    "layout": {
+        "pages": [
+            {
+                "id": "NetBox IPAM",
+                "title": "NetBox IPAM endpoint",
+                "sections": [
+                    {
+                        "id": "section_1",
+                        "fields": [
+                            {
+                                "id": "privateKeyId",
+                                "display": "textField"
+                            },
+                            {
+                                "id": "privateKey",
+                                "display": "passwordField"
+                            },
+                            {
+                                "id": "hostName",
+                                "display": "textField"
+                            },
+                            {
+                                "id": "netboxObject",
+                                "display": "dropDown"
+                            },
+                            {
+                                "id": "ignore_ssl",
+                                "display": "checkbox"
+                            },
+                            {
+                                "id": "domain",
+                                "display": "textField"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "schema": {
+        "privateKeyId": {
+            "type": {
+                "dataType": "string"
+            },
+            "label": "Username",
+            "constraints": {
+                "required": true
+            }
+        },
+        "privateKey": {
+            "label": "privateKey",
+            "type": {
+                "dataType": "secureString"
+            },
+            "constraints": {
+                "required": true
+            }
+        },
+        "hostName": {
+            "type": {
+                "dataType": "string"
+            },
+            "label": "NetBox URL",
+            "constraints": {
+                "required": true
+            }
+        },
+        "netboxObject": {
+            "type": {
+                "dataType": "string"
+            },
+            "label": "NetBox Object",
+            "valueList": [
+                {
+                    "label": "prefixes",
+                    "value": "prefixes"
+                },
+                {
+                    "label": "ip-ranges",
+                    "value": "ip-ranges"
+                }
+            ],
+            "constraints": {
+                "required": true
+            }
+        },
+        "ignore_ssl": {
+            "type": {
+                "dataType": "integer"
+            },
+            "label": "Ignore SSL",
+            "constraints": {
+                "required": false
+            }
+        },
+        "domain": {
+            "type": {
+                "dataType": "string"
+            },
+            "label": "Domain",
+            "constraints": {
+                "required": false
+            }
+        }
+    },
+    "options": {
+    }
+}
